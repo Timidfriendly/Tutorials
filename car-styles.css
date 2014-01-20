@@ -1,0 +1,13 @@
+body {
+    /*background-color: pink;*/
+}
+
+.car {
+    background-color: palegreen;
+    background-color:red;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    margin: 30px;
+    cursor: pointer;
+}

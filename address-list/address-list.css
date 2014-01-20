@@ -1,0 +1,33 @@
+body {
+    /*background-color: pink;*/
+    font: arial, helvetica, 'san-serif' 1em/1.5em;
+}
+
+
+#address-generator {
+	padding: 10px; background-color:#efefef; 
+}
+
+input{
+	padding: 10px;
+	position: relative;
+	width: 200px;
+	margin: 0 10px 0 0;
+
+}
+
+#address-generator input[type="text"]{
+}
+
+input[type="submit"]{
+    position: relative;
+    margin: 0 10px 0 0;
+    cursor: pointer; 
+}
+
+#list {
+	margin:2em 0; 
+	padding:10px;
+	background-color:#E1E8F5;
+	border:1px solid #ddd;  
+}
