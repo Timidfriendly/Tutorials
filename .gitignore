@@ -1,1 +1,4 @@
-*.ideal
+*.idea
+*.idea/*
+*.iml
+
