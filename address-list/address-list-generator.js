@@ -5,18 +5,27 @@ var ADDRESSGEN = {
 		// body...
 	},
 
+    CreateAddress: function(){
+        var formGen = $("#address-generator"),
+            list = $("#list"),
 
-	CreateAddress: function(firstName, lastName) {
-		var list = $("#list"),
-			formGen = $("#address-generator"),
 
-			first_name = formGen.first_name,
-			last_name = formGen.last_name;
+            getAddress: function(){
+
+                first_name = formGen.first_name;
+                last_name = formGen.last_name;
+                console.log(first_name);
+
+
+            }
+
+            setAddress: function(){
+
+
+            }
+    }
 
 			
-		
-	
-	}
 };
 ADDRESSGEN();
 
