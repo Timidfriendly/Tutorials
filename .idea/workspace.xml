@@ -72,28 +72,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="car-demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-3.0434783" vertical-offset="0" max-vertical-offset="560">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-car-demo.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.04191617" vertical-offset="0" max-vertical-offset="668">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="address-list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/address-list/address-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="122" selection-end="122" vertical-scroll-proportion="-3.652174" vertical-offset="0" max-vertical-offset="434">
+            <state line="29" column="7" selection-start="853" selection-end="853" vertical-scroll-proportion="-17.652174" vertical-offset="0" max-vertical-offset="490">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="address-list.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/address-list/address-list.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="-0.71794873" vertical-offset="0" max-vertical-offset="406">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="address-list-generator.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/address-list/address-list-generator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="41" selection-start="591" selection-end="591" vertical-scroll-proportion="0.25798526" vertical-offset="0" max-vertical-offset="1302">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="address-list-generator2.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/address-list/address-list-generator2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="61" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1456">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="address-list2.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/address-list/address-list2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="7" selection-start="853" selection-end="853" vertical-scroll-proportion="-17.652174" vertical-offset="0" max-vertical-offset="490">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Examples-of-Methods_-_functions_-_Objects.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Examples-of-Methods_-_functions_-_Objects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="658">
               <folding />
             </state>
           </provider>
@@ -122,11 +149,16 @@
         <option value="$PROJECT_DIR$/test-car-demo2.js" />
         <option value="$PROJECT_DIR$/car-demo.html" />
         <option value="$PROJECT_DIR$/car-demo4.js" />
-        <option value="$PROJECT_DIR$/address-list/address-list-generator.js" />
         <option value="$PROJECT_DIR$/car-demo3.5.html" />
         <option value="$PROJECT_DIR$/car-demo3.5.js" />
         <option value="$PROJECT_DIR$/make-a-car/car-demo3.5.html" />
         <option value="$PROJECT_DIR$/anObject.js" />
+        <option value="$PROJECT_DIR$/only-make-a-car/car-demo3.5.js" />
+        <option value="$PROJECT_DIR$/address-list/address-list.html" />
+        <option value="$PROJECT_DIR$/address-list/address-list.json" />
+        <option value="$PROJECT_DIR$/address-list/address-list-generator.js" />
+        <option value="$PROJECT_DIR$/address-list/address-list-generator2.js" />
+        <option value="$PROJECT_DIR$/Examples-of-Methods_-_functions_-_Objects.js" />
       </list>
     </option>
   </component>
@@ -135,8 +167,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="835" />
+    <option name="width" value="1559" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -257,6 +289,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutorials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutorials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="address-list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -287,6 +337,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/address-list" />
       <recent name="$PROJECT_DIR$/test-car-demo" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -297,6 +348,12 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.LiveEdit">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -307,10 +364,12 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
@@ -328,14 +387,6 @@
       <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -351,6 +402,19 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -379,19 +443,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -430,21 +481,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="scalaCoverage" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -478,6 +514,21 @@
       <option name="screenWidth" value="0" />
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
     <list size="1">
@@ -521,12 +572,15 @@
       <workItem from="1389600805006" duration="39000" />
       <workItem from="1389774635399" duration="6343000" />
       <workItem from="1389860043907" duration="2832000" />
-      <workItem from="1390245961351" duration="3053000" />
+      <workItem from="1390245961351" duration="3439000" />
+      <workItem from="1390330526165" duration="4454000" />
+      <workItem from="1390393108211" duration="6558000" />
+      <workItem from="1390567313214" duration="3450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52569000" />
+    <option name="totallyTimeSpent" value="67417000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -549,64 +603,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="835" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1559" height="981" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.060817547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898657" sideWeight="0.5008726" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898657" sideWeight="0.5008726" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3998006" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25894135" sideWeight="0.4991274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31970996" sideWeight="0.4991274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995327" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37290168" sideWeight="0.4991274" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995327" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898657" sideWeight="0.5008726" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943925" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -629,291 +655,277 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="7" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="728">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1624">
-          <folding>
-            <marker date="1389774898000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="86" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1624">
-          <folding>
-            <marker date="1389774898000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="86" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1792">
-          <folding>
-            <marker date="1389774898000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1792">
-          <folding>
-            <marker date="1389774898000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="181" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="27" selection-start="688" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="74" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="1500" max-vertical-offset="1905" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="27" selection-start="688" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="74" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="1500" max-vertical-offset="1905" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1305" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="84" selection-start="874" selection-end="874" vertical-scroll-proportion="0.50547045" vertical-offset="0" max-vertical-offset="914">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.057435896" vertical-offset="0" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.19004525" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="1288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/only-make-a-car/car-demo3.5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1036">
-          <folding>
-            <marker date="1390248177000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1390248177000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firstObject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-car-demo/car-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/only-make-a-car/car-demo3.5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="226" selection-end="226" vertical-scroll-proportion="0.251497" vertical-offset="0" max-vertical-offset="668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.42547032" vertical-offset="56" max-vertical-offset="1624">
-          <folding>
-            <marker date="1389774898000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car-demo/car-demo4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="20" selection-start="2252" selection-end="2252" vertical-scroll-proportion="1.7626628" vertical-offset="0" max-vertical-offset="1946">
-          <folding>
-            <marker date="1389862784000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/address-list/address-list-generator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="423" selection-end="423" vertical-scroll-proportion="0.5470333" vertical-offset="0" max-vertical-offset="691">
+        <state line="30" column="0" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples-of-Methods_-_functions_-_Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="2" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="672">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/address-list/address-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="122" selection-end="122" vertical-scroll-proportion="-3.652174" vertical-offset="0" max-vertical-offset="434">
+        <state line="22" column="25" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/only-make-a-car/car-demo3.5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="63" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="560" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list-generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="504">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-3.0434783" vertical-offset="0" max-vertical-offset="560">
-          <folding />
-        </state>
+        <state line="18" column="6" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="560" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="7" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="616" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="728" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1624" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="56" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="37" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="86" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="56" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="37" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="22" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="1624" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="86" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="518" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="31" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="27" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="518" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="14" selection-start="181" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="27" selection-start="688" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="74" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="1500" max-vertical-offset="1905" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="27" selection-start="688" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="74" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="1500" max-vertical-offset="1905" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="84" selection-start="874" selection-end="874" vertical-scroll-proportion="0.50547045" vertical-offset="0" max-vertical-offset="914" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.057435896" vertical-offset="0" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.19004525" vertical-offset="0" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firstObject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-car-demo/car-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.42547032" vertical-offset="56" max-vertical-offset="1624" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="20" selection-start="2252" selection-end="2252" vertical-scroll-proportion="1.7626628" vertical-offset="0" max-vertical-offset="1946" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test-car-demo/test-car-demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.04191617" vertical-offset="0" max-vertical-offset="668">
+        <state line="26" column="39" selection-start="637" selection-end="649" vertical-scroll-proportion="0.5449102" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="10" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.2979351" vertical-offset="428" max-vertical-offset="1218" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="11" selection-start="1367" selection-end="1472" vertical-scroll-proportion="1.0940666" vertical-offset="0" max-vertical-offset="1288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-demo/car-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="0.10687023" vertical-offset="0" max-vertical-offset="655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/only-make-a-car/car-demo3.5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="570" selection-end="570" vertical-scroll-proportion="0.470229" vertical-offset="0" max-vertical-offset="655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/only-make-a-car/car-demo3.5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="63" selection-end="132" vertical-scroll-proportion="0.001019368" vertical-offset="55" max-vertical-offset="1036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/lib/mustache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="144" selection-end="152" vertical-scroll-proportion="0.09989806" vertical-offset="0" max-vertical-offset="8834" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="-0.71794873" vertical-offset="0" max-vertical-offset="406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="7" selection-start="853" selection-end="853" vertical-scroll-proportion="-17.652174" vertical-offset="0" max-vertical-offset="490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list-generator2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="61" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="7" selection-start="853" selection-end="853" vertical-scroll-proportion="-17.652174" vertical-offset="0" max-vertical-offset="490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples-of-Methods_-_functions_-_Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="658">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-list/address-list-generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="591" selection-end="591" vertical-scroll-proportion="0.25798526" vertical-offset="0" max-vertical-offset="1302">
           <folding />
         </state>
       </provider>
