@@ -1,9 +1,12 @@
 var ADDRESSBOOK = {
+    var this = that;
+    // This version allows take two parameters for the FormView & ListView
+    init: function(formGen, listGen) {
+        //ADDRESSBOOK.listFiller = new ADDRESSBOOK.FormView(formGen);
+        //ADDRESSBOOK.theList = new ADDRESSBOOK.ListView(listGen);
 
-
-    init: function() {
-        ADDRESSBOOK.listFiller = new ADDRESSBOOK.FormView($("#address-generator"));
-        ADDRESSBOOK.theList = new ADDRESSBOOK.ListView($("#list"));
+        ADDRESSBOOK.maker = new ADDRESSBOOK.init(ADDRESSBOOK.FormView(formGen), ADDRESSBOOK.ListView(listGen));
+        console.log("ADDRESSBOOK.maker");
 
         var callback = function(){ //callback works asynchroniously and renders page
             ADDRESSBOOK.theList.render(ADDRESSBOOK.template, ADDRESSBOOK.AddressBookModel);

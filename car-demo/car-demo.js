@@ -3,7 +3,7 @@ var MYAPP = {
     /* property contains data */
     carOwner	: "Michael\'s",
 
-//    Methods - becuase it is a function
+//    Methods - because it is a function
     init: function() {
         var michaelsCar = new MYAPP.Car($("#other"), "pink", 39);
         var davidsCar = new MYAPP.Car($("#second-other"), "blue", 68);
@@ -46,7 +46,7 @@ var MYAPP = {
         };
 
 
-        // when we create an instance of Car this get exicuted
+        // when we create an instance of Car this get executed
         var init = (function(){
             el.bind("click", function(){
                 moveCar();
