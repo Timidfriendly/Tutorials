@@ -1,4 +1,4 @@
-//     Underscore.js 1.6.0
+//     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 //     Underscore may be freely distributed under the MIT license.
@@ -52,7 +52,7 @@
   }
 
   // Current version.
-  _.VERSION = '1.6.0';
+  _.VERSION = '1.7.0';
 
   // Internal function that returns an efficient (for current engines) version
   // of the passed-in callback, to be repeatedly applied in other Underscore
@@ -829,8 +829,9 @@
     return function() {
       if (--times > 0) {
         memo = func.apply(this, arguments);
+      } else {
+        func = null;
       }
-      else func = null;
       return memo;
     };
   };
@@ -901,7 +902,9 @@
     for (var i = 1, length = arguments.length; i < length; i++) {
       source = arguments[i];
       for (prop in source) {
-        obj[prop] = source[prop];
+        if (hasOwnProperty.call(source, prop)) {
+            obj[prop] = source[prop];
+        }
       }
     }
     return obj;
@@ -1103,10 +1106,10 @@
     };
   }
 
-  // Optimize `isFunction` if appropriate.
+  // Optimize `isFunction` if appropriate. Work around an IE 11 bug.
   if (typeof /./ !== 'function') {
     _.isFunction = function(obj) {
-      return typeof obj === 'function';
+      return typeof obj == 'function' || false;
     };
   }
 
@@ -1156,6 +1159,7 @@
     return value;
   };
 
+  // Predicate-generating functions. Often useful outside of Underscore.
   _.constant = function(value) {
     return function() {
       return value;
@@ -1283,7 +1287,9 @@
   // JavaScript micro-templating, similar to John Resig's implementation.
   // Underscore templating handles arbitrary delimiters, preserves whitespace,
   // and correctly escapes quotes within interpolated code.
-  _.template = function(text, data, settings) {
+  // NB: `oldSettings` only exists for backwards compatibility.
+  _.template = function(text, settings, oldSettings) {
+    if (!settings && oldSettings) settings = oldSettings;
     settings = _.defaults({}, settings, _.templateSettings);
 
     // Combine delimiters into one regular expression via alternation.
@@ -1327,7 +1333,6 @@
       throw e;
     }
 
-    if (data) return render(data, _);
     var template = function(data) {
       return render.call(this, data, _);
     };
