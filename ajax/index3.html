@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<ul>
+    <li>Define Ajax Object</li>
+    <li>Create instance of Ajax Object</li>
+    <li>Respond to diverse ajax responses</li>
+</ul>
+
+
+<div id="myDiv">
+    <h2>Let AJAX change this text</h2>
+</div>
+<button type="button" id="activate-button">Get external file</button>
+
+
+
+<script src="js/ajaxer-object.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(function() {
+        var $ajaxActivate = $('#activate-button');
+
+        $ajaxActivate.on( 'click', function() {
+            var myAjaxInstance = new AJAXEROBJECT.loadXMLDoc('myDiv', 'external-text.txt', 'post');
+        });
+    });
+</script>
+
+
+</body>
+</html>
