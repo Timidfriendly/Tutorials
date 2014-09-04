@@ -1,0 +1,1 @@
+<h1>Some text from external file</h1>
