@@ -15,23 +15,52 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <h3>Start typing a name in the input field below:</h3>
+        <h3>Ajax reponse using jquery</h3>
         <form action="">
-            First name: <input type="text" id="txt1" onkeyup="showHint(this.value)" />
+            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>
         </form>
-        <p>Suggestions: <span id="txtHint"></span></p>
+
+        <div id="returned-data">
+
+
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+
+        <script>
+            $(function() {
+                $("#get-data").click(function(event){
+                    var $returnedData = $('#returned-data').css("border", "2px solid red");
+
+                    $.getJSON("js/json/names.json", function(data, status) {
+                        var names = [];
+                        var employees = [];
+
+                        $.each( data, function( key, val ) {
+                            names.employees.push( "<li id='" + key + "'>" + val + "</li>");
+                        });
+                        $('<ul/>', {
+                            "class": "list-of-names",
+                            html: names.join( "" )
+                        }).appendTo($returnedData);
+
+                        console.log(data);
+
+                    });
+                    event.preventDefault();
+
+                });
+            });
+
+        </script>
+        <!--<script src="js/main.js"></script>-->
 
 
     </body>
