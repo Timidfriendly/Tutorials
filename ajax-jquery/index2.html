@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <h3>Ajax reponse using jquery</h3>
+        <form action="">
+            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>
+        </form>
+
+        <div id="returned-data">
+
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+
+        <script>
+            $(function() {
+                $("#get-data").click(function(event){
+                    var $returnedData = $('#returned-data').css("border", "2px solid red");
+
+                    $.getJSON("js/json/names2.json", function(dataObject) {
+                        var theEmployess = [];
+                        //var theEmployees = dataObject.employees;
+                        $.each( dataObject, function( key, val ) {
+                            console.log(dataObject.employees);
+
+
+                            theEmployess.push( "<li id='" + key + "'>" + val + "</li>");
+                        });
+                        $('<ul/>', {
+                            "class": "list-of-names",
+                            html: theEmployess.join( "" )
+                        }).appendTo( $returnedData );
+
+
+                    });
+                    event.preventDefault();
+
+                });
+            });
+
+        </script>
+        <!--<script src="js/main.js"></script>-->
+
+
+    </body>
+</html>
