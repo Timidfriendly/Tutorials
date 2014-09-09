@@ -36,37 +36,66 @@
 
         <script>
             var PEEPS = {
-                init: function () {
-                   PEEPS.loadData();
+                init: function (options) {
+                    PEEPS.loadData();
                 },
 
                 loadData: function () {
-                    $("#get-data").click(function(event){
-                        var $returnedData = $('#returned-data');
+                    $($eventInitiator).click(function(event){
 
-                        $.getJSON("js/json/names2.json", function(myJSON_Object) {
-                            var theEmployess = [];
+                        $.ajax({
+                            type: "GET",
+                            url: dataSource,
+                            success: PEEPS.successCallback,
+                            error: PEEPS.failureCallback,
+                            complete: PEEPS.completeCallback
 
-                            //console.log(dataObject.employees[0].firstName);
+                        }),
 
-                            $.each( myJSON_Object.employees, function( key, val ) {
-
-                                theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
-                            });
-                            $('<ul/>', {
-                                "class": "list-of-names",
-                                html: theEmployess.join( "" )
-                            }).appendTo( $returnedData );
-
-
-                        });
                         event.preventDefault();
-
                     })
+                },
+
+                successCallback: function (myJSON_Object) {
+                    var theEmployess = [];
+                    var render = function() {
+                        $.each( myJSON_Object.employees, function( key, val ) {
+                            theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
+                        });
+
+                        $('<ul/>', {
+                            "class": "list-of-names",
+                            html: theEmployess.join( "" )
+                        }).appendTo( $returnedData );
+                    }();
+                },
+                
+                failureCallback: function () {
+                    var render = function() {
+                        var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
+                        $($eventInitiator).append(errorMessage);
+                    }();
+                },
+
+                completeCallback: function (dataType, string ) {
+                    var render = function() {
+                        var message = '<h2>Completion Callback: statusCode: ' + string.toLocaleUpperCase() + '</h2>';
+                        setTimeout(function(){
+                            $($eventInitiator).html(message);
+                        }, 1000);
+                    }();
                 }
             };
 
-            PEEPS.init();
+            PEEPS.init(
+                [
+                    $eventInitiator = "#get-data",
+                    $returnedData = '#returned-data',
+                    dataSource = "js/json/names2.json",
+                    statusCode = ""
+
+                ]
+            );
 
         </script>
         <!--<script src="js/main.js"></script>-->
