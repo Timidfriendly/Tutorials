@@ -37,16 +37,16 @@
         <script>
             $(function() {
                 $("#get-data").click(function(event){
-                    var $returnedData = $('#returned-data').css("border", "2px solid red");
+                    var $returnedData = $('#returned-data');
 
                     $.getJSON("js/json/names2.json", function(dataObject) {
                         var theEmployess = [];
-                        //var theEmployees = dataObject.employees;
-                        $.each( dataObject, function( key, val ) {
-                            console.log(dataObject.employees);
 
+                        //console.log(dataObject.employees[0].firstName);
 
-                            theEmployess.push( "<li id='" + key + "'>" + val + "</li>");
+                        $.each( dataObject.employees, function( key, val ) {
+
+                            theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
                         });
                         $('<ul/>', {
                             "class": "list-of-names",
