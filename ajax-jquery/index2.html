@@ -35,30 +35,38 @@
         <script src="js/plugins.js"></script>
 
         <script>
-            $(function() {
-                $("#get-data").click(function(event){
-                    var $returnedData = $('#returned-data');
+            var PEEPS = {
+                init: function () {
+                   PEEPS.loadData();
+                },
 
-                    $.getJSON("js/json/names2.json", function(dataObject) {
-                        var theEmployess = [];
+                loadData: function () {
+                    $("#get-data").click(function(event){
+                        var $returnedData = $('#returned-data');
 
-                        //console.log(dataObject.employees[0].firstName);
+                        $.getJSON("js/json/names2.json", function(dataObject) {
+                            var theEmployess = [];
 
-                        $.each( dataObject.employees, function( key, val ) {
+                            //console.log(dataObject.employees[0].firstName);
 
-                            theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
+                            $.each( dataObject.employees, function( key, val ) {
+
+                                theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
+                            });
+                            $('<ul/>', {
+                                "class": "list-of-names",
+                                html: theEmployess.join( "" )
+                            }).appendTo( $returnedData );
+
+
                         });
-                        $('<ul/>', {
-                            "class": "list-of-names",
-                            html: theEmployess.join( "" )
-                        }).appendTo( $returnedData );
+                        event.preventDefault();
 
+                    })
+                }
+            };
 
-                    });
-                    event.preventDefault();
-
-                });
-            });
+            PEEPS.init();
 
         </script>
         <!--<script src="js/main.js"></script>-->
