@@ -44,12 +44,12 @@
                     $("#get-data").click(function(event){
                         var $returnedData = $('#returned-data');
 
-                        $.getJSON("js/json/names2.json", function(dataObject) {
+                        $.getJSON("js/json/names2.json", function(myJSON_Object) {
                             var theEmployess = [];
 
                             //console.log(dataObject.employees[0].firstName);
 
-                            $.each( dataObject.employees, function( key, val ) {
+                            $.each( myJSON_Object.employees, function( key, val ) {
 
                                 theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
                             });
