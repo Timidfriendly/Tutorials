@@ -58,7 +58,7 @@
 
                 successCallback: function (myJSON_Object) {
                     var theEmployess = [];
-                    var render = function() {
+                    (function() {
                         $.each( myJSON_Object.employees, function( key, val ) {
                             theEmployess.push( "<li id='employee-" + key + "'>" + val.firstName + "&#160;=&#160;" + val.function + "</li>");
                         });
@@ -67,23 +67,23 @@
                             "class": "list-of-names",
                             html: theEmployess.join( "" )
                         }).appendTo( $returnedData );
-                    }();
+                    }()); // No hanging dogs balls :D
                 },
-                
+
                 failureCallback: function () {
-                    var render = function() {
+                    (function() {
                         var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
                         $($eventInitiator).append(errorMessage);
-                    }();
+                    }());
                 },
 
                 completeCallback: function (dataType, string ) {
-                    var render = function() {
+                    (function() {
                         var message = '<h2>Completion Callback: statusCode: ' + string.toLocaleUpperCase() + '</h2>';
                         setTimeout(function(){
                             $($eventInitiator).html(message);
                         }, 1000);
-                    }();
+                    }());
                 }
             };
 
