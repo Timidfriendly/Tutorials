@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <h3>Ajax reponse using jquery</h3>
+        <form action="">
+            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>
+        </form>
+
+        <div id="returned-data">
+
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="node_modules/lodash/lodash.js"></script>
+
+        <script>
+            var PEEPS = {
+                init: function (options) {
+                    $($eventInitiator).click(function(event) {
+                        PEEPS.loadData();
+                        event.preventDefault();
+                    });
+                },
+
+                loadData: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: url
+                        //dataType: json
+                    })
+                    .done(function (myJSON_Object, textStatus, jqXHR) {
+                        var theEmployess = [];
+
+                        (function() {
+                            $.each( myJSON_Object.employees, function( key, val ) {
+                                theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.function.toLowerCase() + "'>" + val.function + "</span>" + "</li>");
+                            });
+                            $('<ul/>', {
+                                "class": "list-of-names",
+                                html: theEmployess.join( "" )
+                            }).appendTo( $returnedData );
+                        }());
+                    })
+                    .fail(function (textStatus) {
+                        (function() {
+                            var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
+                            $($eventInitiator).append(errorMessage);
+                            console.log(textStatus);
+
+                        }());
+                    })
+                    .always(function (data, textStatus) {
+                        var message = '<h2>Completion Callback: statusCode: ' + textStatus + '</h2>';
+                        var selectPulldown = '<p><label>Sort by: </label><select id="sort-by" name="select"><option value="value0">choose a sort method</option><option value="value1">name</option><option value="value2">Role</option></select></p>';
+
+                        setTimeout(function(){
+                            $($returnedData).prepend(selectPulldown);
+                            console.log('logged line complete');
+                            // use deferred.promise(); instead of nested setTimeout
+                            setTimeout(function(){
+                                PEEPS.sortby();
+                            }, 1000);
+
+                        }, 1000);
+                    })
+
+                },
+
+                sortby: function () {
+                    console.log( 'logged line sort');
+                    $("#sort-by").on('change', function () {
+                        console.log( 'changing');
+                        _.map(_.sortBy(characters, 'age'), _.values);
+                    });
+
+                }
+            };
+
+            PEEPS.init(
+                [
+                    $eventInitiator = "#get-data",
+                    $returnedData = '#returned-data',
+                    url = "js/json/names2.json"
+                ]
+            );
+
+
+        </script>
+    </body>
+</html>
