@@ -70,7 +70,7 @@
                                 $($eventInitiator).append(errorMessage);
                             }());
                         })
-                        .always(function (textStatus) {
+                        .always(function (data, textStatus) {
                             console.log('logged line = ' + textStatus);
                             var message = '<h2>Completion Callback: statusCode: ' + textStatus + '</h2>';
                             setTimeout(function(){
@@ -88,9 +88,7 @@
                 [
                     $eventInitiator = "#get-data",
                     $returnedData = '#returned-data',
-                    dataSource = "js/json/names2.json",
-                    statusCode = ""
-
+                    dataSource = "js/json/names2.json"
                 ]
             );
 
