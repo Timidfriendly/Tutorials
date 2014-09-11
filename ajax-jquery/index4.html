@@ -51,15 +51,18 @@
                     })
                     .done(function (myJSON_Object, textStatus, jqXHR) {
                         var theEmployess = [];
+                        var dataSetEmployees = myJSON_Object.employees;
+                        // dataSetEmployees[0].firstName // outputs Anna
 
                         (function() {
-                            $.each( myJSON_Object.employees, function( key, val ) {
+                            $.each( dataSetEmployees, function( key, val ) {
                                 theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.function.toLowerCase() + "'>" + val.function + "</span>" + "</li>");
                             });
                             $('<ul/>', {
                                 "class": "list-of-names",
                                 html: theEmployess.join( "" )
                             }).appendTo( $returnedData );
+
                         }());
                     })
                     .fail(function (textStatus) {
@@ -91,7 +94,8 @@
                     console.log( 'logged line sort');
                     $("#sort-by").on('change', function () {
                         console.log( 'changing');
-                        _.map(_.sortBy(characters, 'age'), _.values);
+                        //_.map(_.sortBy(characters, 'age'), _.values);
+                        console.log(_.map(_.sortBy(PEEPS.loadData.myJSON_Object)));
                     });
 
                 }
