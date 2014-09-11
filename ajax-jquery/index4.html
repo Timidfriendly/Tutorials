@@ -50,17 +50,7 @@
                         //dataType: json
                     })
                     .done(function (myJSON_Object, textStatus, jqXHR) {
-                        var theEmployess = [];
-                        var dataSetEmployees = myJSON_Object.employees;
-                        // dataSetEmployees[0].firstName // outputs Anna
-                        PEEPS.collection = dataSetEmployees;
-                        $.each( dataSetEmployees, function( key, val ) {
-                            theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
-                        });
-                        $('<ul>', {
-                            "class": "list-of-names",
-                            html: theEmployess.join( "" )
-                        }).appendTo( $returnedData );
+                        PEEPS.render(myJSON_Object);
                     })
                     .fail(function (textStatus) {
                         var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
@@ -82,6 +72,20 @@
 
                 },
 
+                render: function (myJSON_Object, textStatus, jqXHR) {
+                    var theEmployess = [];
+                    var dataSetEmployees = myJSON_Object.employees;
+                    // dataSetEmployees[0].firstName // outputs Anna
+                    PEEPS.collection = dataSetEmployees;
+                    $.each( dataSetEmployees, function( key, val ) {
+                        theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
+                    });
+                    $('<ul>', {
+                        "class": "list-of-names",
+                        html: theEmployess.join( "" )
+                    }).appendTo( $returnedData );
+                },
+
 
 
                 sortby: function (by) {
@@ -89,12 +93,9 @@
                         console.log( 'changing');
                         var sortbyValue = $('#sort-by option:selected').val();
 
-                        console.log(sortbyValue);
-
-                        //_.map(_.sortBy(characters, 'age'), _.values);
-                        // console.log(_.map(_.sortBy(PEEPS.loadData.myJSON_Object)));
+                        //console.log(_.sortBy(PEEPS.collection, 'firstname'));
                         console.log(_.sortBy(PEEPS.collection, function(person){return person[sortbyValue]}));
-                        //person.['firstname']
+                        // person['firstname'] === person.firstname
 
                     });
 
