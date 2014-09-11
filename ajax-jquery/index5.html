@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <h3>Ajax reponse using jquery</h3>
+        <form action="">
+            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>&#160;
+        </form>
+
+        <div id="returned-data">
+
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="node_modules/lodash/lodash.js"></script>
+
+        <script>
+            var PEEPS = {
+                init: function (options) {
+                    $($eventInitiator).click(function (event) {
+                        PEEPS.LoadData();
+                        event.preventDefault();
+                    });
+                },
+
+                LoadData: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: url
+                        //dataType: json
+                    })
+                    .done(function (myJSON_Object) {
+                        PEEPS.Render(myJSON_Object);
+                    })
+                    .fail(function () {
+                        var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
+                        $($returnedData).append(errorMessage);
+                    })
+                    .always(function () {
+                        PEEPS._wait(2000)
+                        .then(function () {
+                            PEEPS._addSelect(); //.then allows then next function to wait until previous function is complete
+                        })
+                        .then(function () {
+                            PEEPS.Sortby();
+                        });
+
+                    })
+                },
+
+                collection: [],
+
+                Render: function (myJSON_Object) {
+                    var theEmployess = [];
+                    PEEPS.collection = myJSON_Object.employees;
+                    // dataSetEmployees[0].firstName // outputs Anna
+
+                    $($returnedData).empty();
+                    $.each(PEEPS.collection, function (key, val) {
+                        theEmployess.push("<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
+                    });
+                    $('<ul>', {
+                        "class": "list-of-names",
+                        html: theEmployess.join("")
+                    }).appendTo($returnedData);
+                },
+
+
+                Sortby: function (by) {
+                    $("#sort-by").on('change', function () {
+                        var sortbyValue = $('#sort-by option:selected').val(),
+
+                        // person['firstname'] === person.firstname
+                        sortedPeepsCollection = _.sortBy(PEEPS.collection, function (person) {
+                            return person[sortbyValue]
+                        });
+
+                        myJSON_Object = {
+                            "employees": sortedPeepsCollection // redefining the array employees
+                        };
+                        PEEPS.Render(myJSON_Object);
+                    });
+
+                },
+
+                _addSelect: function () {
+                    var selectPulldown = '<label>Sort by: </label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select>';
+                    $($returnedData).prev().append(selectPulldown);
+                },
+
+                _wait: function (ms) {
+                    var deferred = $.Deferred();
+                    setTimeout(deferred.resolve, ms);
+                    // We just need to return the promise not the whole deferred.
+                    return deferred.promise();
+                }
+            };
+
+            PEEPS.init(
+                [
+                    $eventInitiator = "#get-data",
+                    $returnedData = '#returned-data',
+                    url = "js/json/names2.json"
+                ]
+            );
+
+
+        </script>
+    </body>
+</html>
