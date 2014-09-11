@@ -22,7 +22,7 @@
 
         <h3>Ajax reponse using jquery</h3>
         <form action="">
-            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>
+            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>&#160;
         </form>
 
         <div id="returned-data">
@@ -37,66 +37,73 @@
         <script>
             var PEEPS = {
                 init: function (options) {
-                    $($eventInitiator).click(function(event) {
+                    $($eventInitiator).click(function (event) {
                         PEEPS.loadData();
                         event.preventDefault();
                     });
                 },
-                collection: [],
+
                 loadData: function () {
                     $.ajax({
                         type: "GET",
                         url: url
                         //dataType: json
                     })
-                    .done(function (myJSON_Object, textStatus, jqXHR) {
+                    .done(function (myJSON_Object) {
                         PEEPS.render(myJSON_Object);
                     })
-                    .fail(function (textStatus) {
+                    .fail(function () {
                         var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
-                        $($eventInitiator).append(errorMessage);
+                        $($returnedData).append(errorMessage);
                     })
-                    .always(function (data, textStatus) {
-                        var message = '<h2>Completion Callback: statusCode: ' + textStatus + '</h2>';
-                        var selectPulldown = '<p><label>Sort by: </label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></p>';
-
-                        setTimeout(function(){
-                            $($returnedData).prepend(selectPulldown);
-                            // use deferred.promise(); instead of nested setTimeout
-                            setTimeout(function(){
+                    .always(function () {
+                        // use deferred.promise(); instead of nested setTimeout
+                        setTimeout(function () {
+                            PEEPS.addSelect();
+                            setTimeout(function () {
                                 PEEPS.sortby();
                             }, 1000);
 
                         }, 1000);
                     })
-
                 },
 
-                render: function (myJSON_Object, textStatus, jqXHR) {
+                addSelect: function () {
+                    var selectPulldown = '<label>Sort by: </label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select>';
+                    $($returnedData).prev().append(selectPulldown);
+                },
+
+                collection: [],
+
+                render: function (myJSON_Object) {
                     var theEmployess = [];
-                    var dataSetEmployees = myJSON_Object.employees;
+                    PEEPS.collection = myJSON_Object.employees;
                     // dataSetEmployees[0].firstName // outputs Anna
-                    PEEPS.collection = dataSetEmployees;
-                    $.each( dataSetEmployees, function( key, val ) {
-                        theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
+
+                    $($returnedData).empty();
+                    $.each(PEEPS.collection, function (key, val) {
+                        theEmployess.push("<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
                     });
                     $('<ul>', {
                         "class": "list-of-names",
-                        html: theEmployess.join( "" )
-                    }).appendTo( $returnedData );
+                        html: theEmployess.join("")
+                    }).appendTo($returnedData);
                 },
-
 
 
                 sortby: function (by) {
                     $("#sort-by").on('change', function () {
-                        console.log( 'changing');
-                        var sortbyValue = $('#sort-by option:selected').val();
+                        var sortbyValue = $('#sort-by option:selected').val(),
 
-                        //console.log(_.sortBy(PEEPS.collection, 'firstname'));
-                        console.log(_.sortBy(PEEPS.collection, function(person){return person[sortbyValue]}));
                         // person['firstname'] === person.firstname
+                        sortedPeepsCollection = _.sortBy(PEEPS.collection, function (person) {
+                            return person[sortbyValue]
+                        });
 
+                        myJSON_Object = {
+                            "employees": sortedPeepsCollection
+                        };
+                        PEEPS.render(myJSON_Object);
                     });
 
                 }
