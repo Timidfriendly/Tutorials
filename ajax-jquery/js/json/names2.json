@@ -2,152 +2,152 @@
     "employees": [
         {
             "firstName": "Anna",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Brittany",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Cinderella",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Diana",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Eva",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Fiona",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Gunda",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Hege",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Inga",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Johanna",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Kitty",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Linda",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Nina",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Ophelia",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Petunia",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Amanda",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Raquel",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Cindy",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Doris",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Eve",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Evita",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Sunniva",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Tove",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Unni",
-            "function": "Designer"
+            "role": "Designer"
         },
 
         {
             "firstName": "Violet",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Liza",
-            "function": "Text writer"
+            "role": "Text writer"
         },
 
         {
             "firstName": "Elizabeth",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Ellen",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Wenche",
-            "function": "Programmer"
+            "role": "Programmer"
         },
 
         {
             "firstName": "Vicky",
-            "function": "Designer"
+            "role": "Designer"
         }
 
     ]

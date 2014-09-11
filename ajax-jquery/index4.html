@@ -42,7 +42,7 @@
                         event.preventDefault();
                     });
                 },
-
+                collection: [],
                 loadData: function () {
                     $.ajax({
                         type: "GET",
@@ -53,33 +53,25 @@
                         var theEmployess = [];
                         var dataSetEmployees = myJSON_Object.employees;
                         // dataSetEmployees[0].firstName // outputs Anna
-
-                        (function() {
-                            $.each( dataSetEmployees, function( key, val ) {
-                                theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.function.toLowerCase() + "'>" + val.function + "</span>" + "</li>");
-                            });
-                            $('<ul/>', {
-                                "class": "list-of-names",
-                                html: theEmployess.join( "" )
-                            }).appendTo( $returnedData );
-
-                        }());
+                        PEEPS.collection = dataSetEmployees;
+                        $.each( dataSetEmployees, function( key, val ) {
+                            theEmployess.push( "<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
+                        });
+                        $('<ul>', {
+                            "class": "list-of-names",
+                            html: theEmployess.join( "" )
+                        }).appendTo( $returnedData );
                     })
                     .fail(function (textStatus) {
-                        (function() {
-                            var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
-                            $($eventInitiator).append(errorMessage);
-                            console.log(textStatus);
-
-                        }());
+                        var errorMessage = '<h1>Data resource could not be located</h1><p><a href="mailto:email@admin.com">Please contact Support for further help</a></p>';
+                        $($eventInitiator).append(errorMessage);
                     })
                     .always(function (data, textStatus) {
                         var message = '<h2>Completion Callback: statusCode: ' + textStatus + '</h2>';
-                        var selectPulldown = '<p><label>Sort by: </label><select id="sort-by" name="select"><option value="value0">choose a sort method</option><option value="value1">name</option><option value="value2">Role</option></select></p>';
+                        var selectPulldown = '<p><label>Sort by: </label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></p>';
 
                         setTimeout(function(){
                             $($returnedData).prepend(selectPulldown);
-                            console.log('logged line complete');
                             // use deferred.promise(); instead of nested setTimeout
                             setTimeout(function(){
                                 PEEPS.sortby();
@@ -90,12 +82,20 @@
 
                 },
 
-                sortby: function () {
-                    console.log( 'logged line sort');
+
+
+                sortby: function (by) {
                     $("#sort-by").on('change', function () {
                         console.log( 'changing');
+                        var sortbyValue = $('#sort-by option:selected').val();
+
+                        console.log(sortbyValue);
+
                         //_.map(_.sortBy(characters, 'age'), _.values);
-                        console.log(_.map(_.sortBy(PEEPS.loadData.myJSON_Object)));
+                        // console.log(_.map(_.sortBy(PEEPS.loadData.myJSON_Object)));
+                        console.log(_.sortBy(PEEPS.collection, function(person){return person[sortbyValue]}));
+                        //person.['firstname']
+
                     });
 
                 }
