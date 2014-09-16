@@ -11,6 +11,11 @@
         },
 
         {
+            "firstName": "Linda",
+            "role": "Text writer"
+        },
+
+        {
             "firstName": "Cinderella",
             "role": "Designer"
         },
@@ -52,11 +57,6 @@
 
         {
             "firstName": "Kitty",
-            "role": "Text writer"
-        },
-
-        {
-            "firstName": "Linda",
             "role": "Text writer"
         },
 

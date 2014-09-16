@@ -1,0 +1,58 @@
+body{
+    padding: 1em 3em;
+}
+
+button {
+    background-color: #2678bb;
+    color: #FFF;
+    border-radius: 3px;
+    border: none;
+    padding: 22px;
+    width: 33.8%;
+}
+
+.controls {
+    display: inline-block;
+    width: 33%;
+    margin-right: 15px;
+    padding: 5px;
+    background-color: #efefef;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+label:last-child {
+    margin-right: 5px;
+}
+
+input[type='checkbox']{
+    margin: 5px;
+}
+
+
+
+h3 {
+    margin: 0;
+}
+
+/*h3.sort {*/
+    /*display: inline-block;*/
+/*}*/
+
+.list-of-names {
+    margin: 2em 0 0 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+}
+
+.list-of-names li {
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+    padding: 5px 0;
+
+}
+
+.first-name {
+    min-width: 100px;
+    display: inline-block;
+}

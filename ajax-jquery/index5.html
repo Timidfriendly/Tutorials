@@ -14,15 +14,28 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tweaks.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 
     </head>
     <body>
 
-        <h3>Ajax reponse using jquery</h3>
+        <h1>Ajax reponse using jquery</h1>
         <form action="">
-            <button id="get-data">Send an HTTP GET request to a page and get the result back</button>&#160;
+            <div class="button-wrapper"><button id="get-data">Click here to send an HTTP GET request to a page and get the result back</button>&#160;</div>
+            <div class="roles-wrapper controls">
+                <h3>Filter roles</h3>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="role-1" value="designer" checked>Designer
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="role-2" value="programmer" checked>Programmer
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="role-3" value="text-writer" checked>Text writer
+                </label>
+            </div>
         </form>
 
         <div id="returned-data">
@@ -41,6 +54,8 @@
                         PEEPS.LoadData();
                         event.preventDefault();
                     });
+
+
                 },
 
                 LoadData: function () {
@@ -63,6 +78,7 @@
                         })
                         .then(function () {
                             PEEPS.Sortby();
+                            PEEPS.Filterby();
                         });
 
                     })
@@ -75,9 +91,10 @@
                     PEEPS.collection = myJSON_Object.employees;
                     // dataSetEmployees[0].firstName // outputs Anna
 
+                    
                     $($returnedData).empty();
                     $.each(PEEPS.collection, function (key, val) {
-                        theEmployess.push("<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;=&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
+                        theEmployess.push("<li id='employee-" + key + "'>" + "<b class='first-name'>" + val.firstName + "</b>" + "&#160;:&#160;" + "<span class='function " + val.role.toLowerCase() + "'>" + val.role + "</span>" + "</li>");
                     });
                     $('<ul>', {
                         "class": "list-of-names",
@@ -94,7 +111,6 @@
                         sortedPeepsCollection = _.sortBy(PEEPS.collection, function (person) {
                             return person[sortbyValue]
                         });
-
                         myJSON_Object = {
                             "employees": sortedPeepsCollection // redefining the array employees
                         };
@@ -103,9 +119,49 @@
 
                 },
 
+                Filterby: function () {
+                    var $checkboxes = $('.checkbox-inline input[type="checkbox"]');
+                    var theOriginalPEEPScollection = PEEPS.collection;
+                    $checkboxes.on('change', function () {
+                        var checkedRoles = []
+                        $( $checkboxes ).each(function( index ) {
+                            if ($( this ).is(':checked')) {
+                                var checkboxValue = $( this).val();
+                                checkedRoles.push(checkboxValue);
+                            }
+                        });
+
+
+
+                        filterdPeepsCollection = _.filter(theOriginalPEEPScollection, function (person) {
+
+                            if (_.indexOf(checkedRoles, person.role.replace(/\s+/g, '-').toLowerCase()) !== -1) {
+                                // checks to see if the 'person.role' is present within the 'checkedRoles' array
+                                return true; // returns the result of the if statement
+                            } else {
+                                return false;
+                            }
+                        });
+
+
+                        myJSON_Object = {
+                            "employees": filterdPeepsCollection // redefining the array employees
+                        };
+                        PEEPS.Render(myJSON_Object);
+
+                    });
+
+                },
+
+
                 _addSelect: function () {
-                    var selectPulldown = '<label>Sort by: </label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select>';
+                    var selectPulldown = '<div class="controls"><label><h3>Sort by role: </h3></label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></div>';
                     $($returnedData).prev().append(selectPulldown);
+                },
+
+                _addCheckboxes: function () {
+                    var checkBoxes = '';
+
                 },
 
                 _wait: function (ms) {
