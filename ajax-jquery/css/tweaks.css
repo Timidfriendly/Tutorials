@@ -17,7 +17,7 @@ button {
     margin-right: 15px;
     padding: 5px;
     background-color: #efefef;
-    margin: 1em 0;
+    margin: 1em 0 0 0;
     border-radius: 5px;
 }
 
@@ -30,14 +30,9 @@ input[type='checkbox']{
 }
 
 
-
 h3 {
     margin: 0;
 }
-
-/*h3.sort {*/
-    /*display: inline-block;*/
-/*}*/
 
 .list-of-names {
     margin: 2em 0 0 0;
@@ -55,4 +50,8 @@ h3 {
 .first-name {
     min-width: 100px;
     display: inline-block;
+}
+
+[data-visibility="hidden"] {
+    display: none;
 }
