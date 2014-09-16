@@ -73,7 +73,9 @@
                     .always(function () {
                         PEEPS._wait(2000)
                         .then(function () {
-                            PEEPS._addSelect(); //.then allows then next function to wait until previous function is complete
+                            if ($('.select-pulldown').length < 1){
+                                PEEPS._addSelect(); //.then allows then next function to wait until previous function is complete
+                            }
                         })
                         .then(function () {
                             PEEPS.Sortby();
@@ -155,7 +157,7 @@
                 },
 
                 _addSelect: function () {
-                    var selectPulldown = '<div class="controls"><label><h3>Sort by role: </h3></label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></div>';
+                    var selectPulldown = '<div class="controls select-pulldown"><label><h3>Sort by role: </h3></label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></div>';
                     $($returnedData).prev().append(selectPulldown);
                 },
 
