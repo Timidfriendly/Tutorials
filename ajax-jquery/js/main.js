@@ -1,8 +1,10 @@
+
 var PEEPS = {
     /* global $:false */
     /* function variables */
 
     init: function (options) {
+
 
         $($eventInitiator).click(function (event) {
             PEEPS.LoadData();
@@ -114,11 +116,11 @@ var PEEPS = {
 
     _addSelect: function () {
         var selectPulldown = '<div class="controls select-pulldown"><label><h3>Sort by role: </h3></label><select id="sort-by" name="select"><option value="null">choose a sort method</option><option value="firstName">First name</option><option value="role">Role</option></select></div>';
-        $(PEEPS.options.$returnedData).prev().append(selectPulldown);
+        $($returnedData).prev().append(selectPulldown);
     },
 
     _showCheckboxes: function () {
-        var $checkBoxes = $('.roles-wrapper').fadeIn();
+        $checkBoxesWrap = $('.roles-wrapper').fadeIn();
     },
 
     _wait: function (ms) {
@@ -128,11 +130,3 @@ var PEEPS = {
         return deferred.promise();
     }
 };
-
-PEEPS.init(
-    [
-        $eventInitiator = "#get-data",
-        $returnedData = '#returned-data',
-        url = "js/json/names2.json"
-    ]
-);
